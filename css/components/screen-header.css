@@ -1,0 +1,55 @@
+.screen-header{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--horizontal-space);
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+
+.screen-header__title {
+    font-size: 32px;
+    font-weight: 600;
+    
+}
+
+.screen-header__icons span{
+    margin-left: 25px;
+}
+
+.freinds-screen {
+    padding: 0px var(--horizontal-space);
+}
+
+.screen-header__gear {
+    position:relative;
+}
+
+.find-screen__dot {
+    color: tomato;
+    background-color: tomato;
+    width: 5px;
+    height: 5px;
+    justify-content: center;
+    border-radius: 20px;
+    position: absolute;
+    top:30px;
+    right:23px;
+    
+}
+
+@keyframes rotategear {
+    from {
+        transform:none;
+    }
+
+    to {
+        transform: rotatez(360deg);
+    }
+}
+
+
+
+.screen-header__icons  .fa-gear:hover {
+    animation: rotategear 1s linear;
+}
